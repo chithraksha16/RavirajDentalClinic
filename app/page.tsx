@@ -338,7 +338,7 @@ export default function Home() {
  <div className="w-full bg-[#E2E8F0] sm:px-20 px-8 sm:py-10 py-8">
     <div className="py-10 space-y-1">
           <p className="text-center font-heading font-medium sm:text-[15px] text-[13px] text-[#072959]">-WHAT WE OFFER</p>
-          <h2 className="text-center  font-heading font-medium sm:text-[33px] text-[23px]">Treatments We Specialize In </h2>
+          <h2 className="text-center  font-heading font-medium sm:text-[33px] text-[23px]">Treatments WeSpecialize In </h2>
           <p className="text-center  font-body font-normal sm:text-[14px] text-[12px] text-[#395781]">Advanced dental treatments designed for comfort, precision, and lasting results.</p>
 
     </div>

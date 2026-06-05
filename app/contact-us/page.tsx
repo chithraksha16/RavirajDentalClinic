@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import Button from "@/components/ui/Button"
 import Marquee from "@/components/ui/Marquee"
@@ -9,38 +10,46 @@ import { RiFileList2Line,RiAlarmWarningLine } from "react-icons/ri";
 import { TfiDirection } from "react-icons/tfi";
 import { MdOutlineAccessTime } from "react-icons/md";
 import GoogleMap from "@/components/GoogleMap";
+import { motion } from "framer-motion";
 
 
-export const metadata: Metadata = {
-  title: "Contact-Us | Raviraj Dental Clinic",
-  description:
-    "Comprehensive dental treatments including cosmetic dentistry, orthodontics, implants, root canal therapy, and preventive dental care.",
-  keywords: [
-    "Dentist",
-    "Dental Clinic",
-    "Dental Services",
-    "Root Canal",
-    "Dental Implants",
-    "Teeth Whitening",
-    "Braces",
-  ],
-  openGraph: {
-    title: "Raviraj Dental Clinic",
-    description:
-      "Professional dental care for healthy and confident smiles.",
-    type: "website",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Contact-Us | Raviraj Dental Clinic",
+//   description:
+//     "Comprehensive dental treatments including cosmetic dentistry, orthodontics, implants, root canal therapy, and preventive dental care.",
+//   keywords: [
+//     "Dentist",
+//     "Dental Clinic",
+//     "Dental Services",
+//     "Root Canal",
+//     "Dental Implants",
+//     "Teeth Whitening",
+//     "Braces",
+//   ],
+//   openGraph: {
+//     title: "Raviraj Dental Clinic",
+//     description:
+//       "Professional dental care for healthy and confident smiles.",
+//     type: "website",
+//   },
+// };
 const page = () => {
   return (
     <section>
       <div className="w-full h-130 bg-black pt-10">
+        <motion.div
+        initial={{opacity:0,y:20}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.5,delay:0.1}}>
+        
+        
         <h1 className="text-center font-heading font-medium sm:text-[40px] text-[30px] text-white pt-15 flex flex-col"><span className="text-[#072959]">Our</span> Dental Care Contact</h1>
         <p className="font-heading sm:text-[14px] text-[12px]   text-center text-[#8D9EB7]">Get in touch with us for trusted dental care and support.</p>
         <div className="flex items-center flex-col gap-5 justify-center mt-18">
           <p className="font-heading sm:text-[14px] text-[12px] sm:w-175 w-auto px-2 sm:px-0 text-center text-[#8D9EB7]">Experience dental care that prioritizes your comfort, hygiene, and lasting results. Our skilled team is dedicated to helping you maintain a healthy, confident smile.</p>
-          <Button className="bg-[#072959] text text-white flex gap-1" size="sm">Request Consultation <FaArrowRight />  </Button>
+          <Button  className="bg-[#072959] text text-white flex gap-1" size="sm">Request Consultation <FaArrowRight />  </Button>
         </div>
+        </motion.div>
       </div>
       <Marquee />
       <div className="w-full bg-white sm:px-20 px-8 sm:py-10 py-8">
