@@ -1,5 +1,4 @@
 "use client"
-import { Metadata } from "next";
 import Button from "@/components/ui/Button"
 import Marquee from "@/components/ui/Marquee"
 import { FaArrowRight } from "react-icons/fa6"
@@ -12,36 +11,15 @@ import { MdOutlineAccessTime } from "react-icons/md";
 import GoogleMap from "@/components/GoogleMap";
 import { motion } from "framer-motion";
 
-
-// export const metadata: Metadata = {
-//   title: "Contact-Us | Raviraj Dental Clinic",
-//   description:
-//     "Comprehensive dental treatments including cosmetic dentistry, orthodontics, implants, root canal therapy, and preventive dental care.",
-//   keywords: [
-//     "Dentist",
-//     "Dental Clinic",
-//     "Dental Services",
-//     "Root Canal",
-//     "Dental Implants",
-//     "Teeth Whitening",
-//     "Braces",
-//   ],
-//   openGraph: {
-//     title: "Raviraj Dental Clinic",
-//     description:
-//       "Professional dental care for healthy and confident smiles.",
-//     type: "website",
-//   },
-// };
 const page = () => {
   return (
     <section>
-      <div className="w-full h-130 bg-black pt-10">
+        <div className="w-full h-130 bg-black pt-10">
         <motion.div
         initial={{opacity:0,y:20}}
-        animate={{opacity:1,y:0}}
-        transition={{duration:0.5,delay:0.1}}>
-        
+        whileInView={{opacity:1,y:0}}
+        viewport={{once:true}}
+        transition={{duration:0.6,delay:0.2}}>
         
         <h1 className="text-center font-heading font-medium sm:text-[40px] text-[30px] text-white pt-15 flex flex-col"><span className="text-[#072959]">Our</span> Dental Care Contact</h1>
         <p className="font-heading sm:text-[14px] text-[12px]   text-center text-[#8D9EB7]">Get in touch with us for trusted dental care and support.</p>
@@ -53,13 +31,19 @@ const page = () => {
       </div>
       <Marquee />
       <div className="w-full bg-white sm:px-20 px-8 sm:py-10 py-8">
-        <div className="py-10 space-y-1">
+        <motion.div
+        initial={{opacity:0,y:20}}
+        whileInView={{opacity:1,y:0}}
+        viewport={{once:true}}
+        transition={{duration:0.6,delay:0.2}}
+        className="py-10 space-y-1">
           <p className="text-center font-heading font-medium sm:text-[15px] text-[13px] text-[#072959]">CONTACT US</p>
           <h2 className="text-center  font-heading font-medium sm:text-[33px] text-[23px]">Get in touch with our team </h2>
           <p className="text-center  font-body font-normal sm:text-[14px] text-[12px] text-[#395781]">We're here to help — call, message, or visit us directly. Same-day appointments available.Call now WhatsApp us</p>
-        </div>
+        </motion.div>
         <div className="flex justify-center py-5">
-        <div className="flex flex-wrap justify-center gap-4">
+        <div
+        className="flex flex-wrap justify-center gap-4">
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#072959] text-white" href={''}><IoCallOutline /><span>Call Now</span></Link>
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#0A8721] text-white" href={''}><IoLogoWhatsapp /><span>WhatsApp</span></Link>
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-black text-white" href={''}><IoLogoInstagram /><span>Instagram</span></Link>
@@ -68,7 +52,8 @@ const page = () => {
         </div>
 
         <div className="flex sm:justify-center sm:gap-20 gap-10 md:gap-5  sm:flex-row flex-col py-10">
-          <div className="border border-[#E6EAEF] flex flex-col items-start  w-auto space-y-4">
+          <div 
+          className="border border-[#E6EAEF] flex flex-col items-start  w-auto space-y-4">
             <div className=" flex gap-2 bg-[#E6EAEF] p-8 w-full ">
               <span className=""><LuMapPin size={20} /></span>
               <div>
@@ -105,7 +90,8 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="border border-[#E6EAEF] flex flex-col items-center  w-auto space-y-4">
+          <div
+          className="border border-[#E6EAEF] flex flex-col items-center  w-auto space-y-4">
             <div className=" flex gap-2 bg-[#E6EAEF] p-8 w-full ">
               <span className=""><MdOutlineAccessTime  size={20}/></span>
               <div>
@@ -126,7 +112,8 @@ const page = () => {
           </div>
         </div>
 
-        <GoogleMap/>
+          <GoogleMap/>
+    
 
         <div className="flex justify-center items-center px-4">
 
