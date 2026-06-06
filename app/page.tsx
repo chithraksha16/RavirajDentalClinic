@@ -15,7 +15,7 @@ function StatItem({
   label: string;
 }) {
   return (
-    <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-3 sm:px-4 py-2 sm:py-3 min-w-[110px] sm:min-w-[130px]">
+    <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-3 sm:px-4 py-2 sm:py-3 min-w-27.5 sm:min-w-32.5">
       <div className="text-[#4a8ed4] shrink-0">{icon}</div>
       <div>
         <p className="text-white font-bold text-sm sm:text-base leading-none">{value}</p>
@@ -125,7 +125,6 @@ const faqs = [
   },
 ];
 
-// ── Put this inside your component ──
 
 export default function Home() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -137,11 +136,13 @@ export default function Home() {
       <div className="absolute inset-0">
         <Image
           src="/about1.webp"
-          alt=""
+          alt="Raviraj dental clinic hero image"
           width={1920}
           height={1080}
           className="w-full h-full object-cover object-center"
-          loading="lazy"
+          priority
+  fetchPriority="high"
+  quality={85}
           draggable={false}
         />
         {/* Dark gradient overlay */}
@@ -164,14 +165,12 @@ export default function Home() {
  
             {/* Tag line */}
             <p className="text-[#4a8ed4] text-[10px] sm:text-xs tracking-[0.3em] uppercase font-semibold mb-4 sm:mb-5">
-              ---Wellness
+              --Wellness
             </p>
  
             {/* Heading */}
             <h1
-              className=" font-heading text-3xl sm:text-4xl md:text-5xl xl:text-[3.4rem] font-bold text-white leading-[1.12] mb-4 sm:mb-5"
-              // style={{ fontFamily: "'Georgia', serif" }}
-            >
+              className=" font-heading text-3xl sm:text-4xl md:text-5xl xl:text-[3.4rem] font-bold text-white leading-[1.12] mb-4 sm:mb-5">
               Advanced Dental Care
               <br />
               for Healthy, Bright,
@@ -187,13 +186,13 @@ export default function Home() {
  
             {/* CTA buttons */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 w-full">
-              <button className="flex items-center gap-2 bg-[#082D62] hover:bg-[#1e6ad4] text-white text-xs sm:text-sm font-semibold tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 shadow-lg shadow-blue-900/40">
+              <button aria-label="Request Consultation" className="flex items-center gap-2 bg-[#082D62] hover:bg-[#1e6ad4] text-white text-xs sm:text-sm font-semibold tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 shadow-lg shadow-blue-900/40">
                 Request Consultation
                 <svg viewBox="0 0 20 20" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 10h12M12 5l5 5-5 5" />
                 </svg>
               </button>
-              <button className="text-white/80 hover:text-white text-xs sm:text-sm font-medium tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg border border-white/25 hover:border-white/50 transition-colors duration-200">
+              <button aria-label="Explore Treatment" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg border border-white/25 hover:border-white/50 transition-colors duration-200">
                 Explore Treatment
               </button>
             </div>
@@ -252,8 +251,8 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12 lg:gap-16">
  
         {/* ── Image ── */}
-        <div className="relative w-full md:w-[280px] lg:w-[300px] shrink-0">
-          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+        <div className="relative w-full md:w-70 lg:w-75 shrink-0">
+          <div className="relative w-full aspect-3/4 rounded-2xl overflow-hidden">
             <Image
               src="/teams/dr Anil shetty 1.webp"
               alt="Dr. Anil Shetty"
@@ -285,7 +284,7 @@ export default function Home() {
           <div>
             <p className="text-[#888] text-sm italic tracking-wide mb-1">
               MEET{" "}
-              <span className="text-[#0d1b2e] font-bold not-italic underline underline-offset-2 tracking-wider">
+              <span className="text-[#0d1b2e] font-heading font-bold not-italic underline underline-offset-2 tracking-wider">
                 DR. ANIL SHETTY
               </span>
             </p>
@@ -322,7 +321,7 @@ export default function Home() {
  
           {/* CTA link */}
           <Link
-            href="/team"
+            href="/about-us"
             className="inline-flex items-center gap-1.5 text-[#0d1b2e] text-sm font-medium mt-1 hover:gap-2.5 transition-all duration-200 w-fit border-b border-[#0d1b2e] pb-0.5"
           >
             Team & Clinic Info
@@ -361,10 +360,10 @@ export default function Home() {
       >
         <span className="text-lg sm:text-xl text-gray-400 shrink-0">{icon}</span>
         <div className="min-w-0">
-          <p className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight break-words">
+          <p className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight wrap-break-word">
             {label}
           </p>
-          <p className="text-[10px] sm:text-xs text-gray-400 mt-0.5 break-words">
+          <p className="text-[10px] sm:text-xs text-gray-400 mt-0.5 wrap-break-word">
             {sub}
           </p>
         </div>
@@ -380,12 +379,12 @@ export default function Home() {
       className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
     >
       {/* Image */}
-      <div className="relative w-full h-[180px] sm:h-[190px] lg:h-[200px] overflow-hidden">
+      <div className="relative w-full h-45 sm:h-47.5 lg:h-50 overflow-hidden">
         <Image
           src={treatments.image}
           alt={treatments.title}
+          loading="lazy"
           fill
-         
           className="object-cover transition-transform duration-500 hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
@@ -428,7 +427,7 @@ export default function Home() {
   <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 max-w-4xl mx-auto">
 
     {/* Card 1 — dark */}
-    <div className="relative flex-1 bg-[#111] rounded-2xl p-6 sm:p-7 flex flex-col justify-between min-h-[200px]">
+    <div className="relative flex-1 bg-[#111] rounded-2xl p-6 sm:p-7 flex flex-col justify-between min-h-50">
       <div>
         <p className="text-[10px] sm:text-[11px] tracking-[0.2em] uppercase text-gray-400 mb-2 font-medium">
           3D Imaging
@@ -436,7 +435,7 @@ export default function Home() {
         <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-3">
           CBCT Scan
         </h3>
-        <p className="text-sm text-gray-400 leading-relaxed max-w-[260px]">
+        <p className="text-sm text-gray-400 leading-relaxed max-w-65">
           Full volumetric 3D imaging for implants, root canals & complex treatment planning.
         </p>
       </div>
@@ -452,7 +451,7 @@ export default function Home() {
     </div>
 
     {/* Card 2 — light */}
-    <div className="relative flex-1 bg-[#f0f0f4] rounded-2xl p-6 sm:p-7 flex flex-col justify-between min-h-[200px]">
+    <div className="relative flex-1 bg-[#f0f0f4] rounded-2xl p-6 sm:p-7 flex flex-col justify-between min-h-50">
       <div>
         <p className="text-[10px] sm:text-[11px] tracking-[0.2em] uppercase text-[#1a5ab8] mb-2 font-medium">
           Panoramic X-Ray
@@ -460,7 +459,7 @@ export default function Home() {
         <h3 className="text-2xl sm:text-3xl font-semibold text-[#0d1b2e] mb-3">
           OPG Scan
         </h3>
-        <p className="text-sm text-[#1a5ab8] leading-relaxed max-w-[260px]">
+        <p className="text-sm text-[#1a5ab8] leading-relaxed max-w-65">
           Complete mouth-to-jaw overview in one fast, low-radiation image. Ideal for routine checks.
         </p>
       </div>
@@ -507,20 +506,22 @@ export default function Home() {
 
     {/* ── Left: two stacked images ── */}
     <div className="w-full lg:w-[42%] xl:w-[38%] flex flex-col gap-3 sm:gap-4 shrink-0">
-      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+      <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
         <Image
           src="/treatments/treating1.webp"
           alt="Dental team treating patient"
           fill
+          loading="lazy"
           className="object-cover"
           sizes="(max-width: 1024px) 100vw, 38vw"
         />
       </div>
-      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+      <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
         <Image
           src="/treatments/treating2.webp"
           alt="Dentist at work"
           fill
+          loading="lazy"
           className="object-cover"
           sizes="(max-width: 1024px) 100vw, 38vw"
         />
@@ -630,7 +631,7 @@ export default function Home() {
     ].map(({ review, name }) => (
       <div
         key={name}
-        className="bg-white rounded-2xl p-6 sm:p-8 flex flex-col gap-4 shadow-sm min-h-[280px] sm:min-h-[300px]"
+        className="bg-white rounded-2xl p-6 sm:p-8 flex flex-col gap-4 shadow-sm min-h-70 sm:min-h-75"
       >
         {/* Quote icon — big */}
         <span className="text-7xl sm:text-8xl font-serif leading-none text-[#1a2f5e] -mb-4">
