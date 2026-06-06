@@ -4,30 +4,9 @@ import { FaArrowRight } from "react-icons/fa6"
 import { FaRegHeart } from "react-icons/fa";
 import { RiUserHeartLine } from "react-icons/ri";
 import { RiPulseAiFill } from "react-icons/ri";
-import { Metadata } from "next";
 import StatsSection from "@/components/ui/StatSection";
 import AboutGlimpse from "@/components/ui/AboutGlimpse"
 import Image from "next/image";
-export const metadata: Metadata = {
-    title: "About-Us | Raviraj Dental Clinic",
-    description:
-        "Comprehensive dental treatments including cosmetic dentistry, orthodontics, implants, root canal therapy, and preventive dental care.",
-    keywords: [
-        "Dentist",
-        "Dental Clinic",
-        "Dental Services",
-        "Root Canal",
-        "Dental Implants",
-        "Teeth Whitening",
-        "Braces",
-    ],
-    openGraph: {
-        title: "Raviraj Dental Clinic",
-        description:
-            "Professional dental care for healthy and confident smiles.",
-        type: "website",
-    },
-};
 
 const team = [
     {
@@ -42,36 +21,36 @@ const team = [
         id: 2,
         photo: "/teams/Dr Sowjanya.webp",
         name: "Dr. Sowjanya Devadiga",
-        speciality: "MDS,Dental Surgeon ",
-        description: "Dr. Sowjanya Devadiga, MDS, Dental Surgeon, combines advanced clinical expertise with a compassionate, patient-focused approach. Dedicated to delivering high-quality dental care, she helps patients achieve healthy, confident smiles through personalized treatment and attention to detail."
+        speciality: "BDS,Dental Surgeon ",
+        description: "Dr. Sowjanya Devadiga, BDS, Dental Surgeon, a graduate of KVG Dental College (2009–2014), brings 12 years of clinical experience and a Fellowship in Implant Dentistry. Combining advanced expertise with a compassionate, patient-focused approach, she delivers personalized dental care to help patients achieve healthy, confident smiles."
     },
     {
         id: 3,
         photo: "/teams/Dr Shwetha.webp",
         name: "Dr. Shwetha Shanbhag",
-        speciality: "MDS,Dental Surgeon ",
-        description: "Dr. Shwetha Shanbhag, MDS, Dental Surgeon, is committed to providing exceptional dental care through a blend of clinical excellence, precision, and compassion. Her patient-centered philosophy and attention to detail help create positive dental experiences and lasting oral health outcomes."
+        speciality: "MDS,Orthodontist & Dentofacial Orthopedics ",
+        description: "Dr. Shwetha Shanbhag, MDS, Orthodontist, a graduate of AECS Maruthi Dental College, Bangalore (2014–2019) and Oxford Dental College (2021–2024), brings 6 years of clinical experience. She combines clinical excellence, precision, and compassion to deliver exceptional patient-centered orthodontic care."
     },
     {
         id: 4,
         photo: "/teams/Dr Sahana.webp",
         name: "Dr. Sahana Sheikh",
         speciality: "BDS,Dental Surgeon ",
-        description: "Dr. Sahana Sheikh, BDS, Dental Surgeon, combines clinical expertise with a gentle and caring approach to patient care. Committed to excellence and attention to detail, she strives to deliver effective dental treatments that promote long-term oral health and confident smiles."
+        description: "Dr. Sahana Sheikh, BDS, Dental Surgeon, a graduate of Yenepoya Dental College (2016–2021) with a Fellowship in Implant Dentistry, brings 4 years of clinical experience. She combines clinical expertise with a gentle, caring approach to deliver effective dental care and confident smiles."
     },
     {
         id: 5,
         photo: "/teams/Dr. Pannaga.webp",
         name: "Dr. Pannaga B Shetty",
         speciality: "BDS,Dental Surgeon ",
-        description: "Dr. Sahana Sheikh, BDS, Dental Surgeon, combines clinical expertise with a gentle and caring approach to patient care. Committed to excellence and attention to detail, she strives to deliver effective dental treatments that promote long-term oral health and confident smiles."
+        description: "Dr. Pannaga Shetty, BDS, Dental Surgeon, a graduate of NSVK Sri Venkateshwara Dental College (2019–2024), combines modern dental knowledge with a gentle, patient-centered approach. With 2 years of clinical practice, she is committed to providing quality dental care and helping patients achieve confident smiles."
     },
     {
         id: 6,
         photo: "/teams/Dr.Donna.webp",
         name: "Dr. Donna Bennny Joseph",
         speciality: "BDS,Dental Surgeon ",
-        description: "Dr. Donna Benny Joseph, BDS, Dental Surgeon, combines clinical knowledge with a caring and attentive approach to dentistry. Dedicated to patient comfort and quality care, she strives to create positive dental experiences while helping patients maintain healthy, beautiful smiles."
+        description: "Dr. Donna Benny Joseph, BDS, Dental Surgeon, a graduate of Subbaiah Dental College (2020–2025), combines clinical knowledge with a caring and attentive approach. With 1 year of clinical experience, she is dedicated to patient comfort, quality care, and healthy smiles."
     },
     {
         id: 7,
@@ -218,22 +197,19 @@ const page = () => {
                     <h2 className="text-center  font-heading font-medium sm:text-[33px] text-[23px]">The Team Behind Your Smile</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-0 mx-auto justify-items-center
-[grid-template-columns:280px] 
-md:[grid-template-columns:repeat(2,280px)] 
-xl:[grid-template-columns:repeat(3,336px)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-0 mx-auto justify-items-center">
                     {team.map((teams) => (
-                        <div key={teams.id} className="w-[280px] xl:w-[336px] flex flex-col bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                        <div key={teams.id} className="w-70 xl:w-84 flex flex-col bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
 
                             <Image
                                 src={teams.photo || ""}
                                 alt={teams.name}
                                 width={336}
                                 height={375}
-                                className="w-full h-[330px] xl:h-[375px] object-cover object-top"
+                                className="w-full h-82.5 xl:h-93.75 object-cover object-top"
                             />
 
-                            <div className="h-[1px] bg-gray-100" />
+                            <div className="h-px bg-gray-100" />
 
                             <div className="flex flex-col items-center text-center gap-1 px-4 py-5">
                                 {teams?.caption && (
@@ -271,7 +247,7 @@ xl:[grid-template-columns:repeat(3,336px)]">
                             width={1140}
                             height={520}
                             unoptimized
-                            className="w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] object-cover rounded-xl"
+                            className="w-full h-55 sm:h-80 md:h-105 lg:h-130 object-cover rounded-xl"
                         />
                     </div>
                 </div>

@@ -4,10 +4,10 @@ import { useRef, useState } from "react";
 
 const mediaItems = [
   { type: "video", src: "/gallery/rrdcvid2_Jr7H9iTR.mp4" },
-  { type: "image", src: "/teams/fullteam-rrdc.webp" },
-  { type: "image", src: "/teams/fullteam-rrdc.webp" },
-  { type: "image", src: "/teams/fullteam-rrdc.webp" },
-  { type: "image", src: "/teams/fullteam-rrdc.webp" },
+  { type: "image", src: "/gallery/gallery7.webp" },
+  { type: "image", src: "/gallery/gallery5.webp" },
+  { type: "image", src: "/gallery/gallery3.webp" },
+  { type: "image", src: "/gallery/gallery2.webp" },
 ];
 
 export default function ClinicGallery() {
@@ -51,7 +51,7 @@ export default function ClinicGallery() {
           {mediaItems.map((item, i) => (
             <div
               key={i}
-              className={`snap-center flex-shrink-0 w-[75vw] h-[340px] rounded-2xl overflow-hidden border-2 transition-all duration-300 ${
+              className={`snap-center shrink-0 w-[75vw] h-85 rounded-2xl overflow-hidden border-2 transition-all duration-300 ${
                 active === i
                   ? "border-[#1a2f5e]"
                   : "border-transparent"
@@ -95,7 +95,7 @@ export default function ClinicGallery() {
 
       {/* ================= DESKTOP ================= */}
       <div className="hidden md:flex justify-center">
-        <div className="grid grid-cols-[300px_650px] gap-5 h-[430px]">
+        <div className="grid grid-cols-[300px_650px] gap-5 h-107.5">
           
           {/* Video */}
           <div className="rounded-2xl overflow-hidden">
