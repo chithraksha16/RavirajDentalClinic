@@ -73,6 +73,13 @@ const team = [
         speciality: "BDS,Dental Surgeon ",
         description: "Dr. Ulka Vasudev, MDS, Pediatric Dentist, combines advanced clinical expertise with a compassionate and child-friendly approach to dental care. Committed to making every visit a positive experience, she works closely with children and parents to promote excellent oral health and lifelong healthy smiles."
     },
+    {
+        id: 10,
+        photo: "/teams/Dr. Naresh.webp",
+        name: "Dr. Naresh Shetty",
+        speciality: "MDS, Prosthodontist and Implantologist",
+        description: "Dr. Naresh Shetty, BDS, MDS, Prosthodontist and Implantologist, a graduate of JSS Dental College, Mysore, with an MDS from A.B. Shetty Memorial Institute of Dental Sciences, Mangalore, brings 18+ years of clinical experience. He is dedicated to advanced implantology, prosthodontic excellence, and restoring healthy, confident smiles."
+    },
 
 ]
 
