@@ -44,7 +44,7 @@ const page = () => {
         <div className="flex justify-center py-5">
         <div
         className="flex flex-wrap justify-center gap-4">
-          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#072959] text-white" href={''}><IoCallOutline /><span>Call Now</span></Link>
+          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#072959] text-white" href="tel:+918971841403"><IoCallOutline /><span>Call Now</span></Link>
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#0A8721] text-white" href={''}><IoLogoWhatsapp /><span>WhatsApp</span></Link>
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-black text-white" href={''}><IoLogoInstagram /><span>Instagram</span></Link>
           <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#87510A] text-white" href={''}><IoLocationOutline /><span>Get Map</span></Link>

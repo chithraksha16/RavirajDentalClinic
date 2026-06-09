@@ -65,7 +65,7 @@ const Header = () => {
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex items-center gap-4">
                     <Button size="sm">
-                        <Link href="tel:+918105280460">+91 8105280460</Link>
+                        <Link href="tel:+918971841403">+91 8971841403</Link>
                     </Button>
                     <Link href="">
                         <Button size="sm" className="bg-[#072959] text-white">
@@ -117,10 +117,10 @@ const Header = () => {
                     {/* Bottom Section */}
                     <div className="flex flex-col items-center gap-4">
                         <Link
-                            href="tel:+918105280460"
+                            href="tel:+918971841403"
                             className="font-heading font-medium text-[16px] px-8 py-1.5 border border-[#072959]"
                         >
-                            +91 8105280460
+                            +91 8971841403
                         </Link>
                         <Link href="">
                             <Button className="w-full bg-[#072959] text-white">

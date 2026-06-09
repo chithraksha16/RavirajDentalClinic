@@ -69,9 +69,9 @@ const team = [
     {
         id: 9,
         photo: "/teams/Dr sumanth.webp",
-        name: "Dr. Sumanth",
-        speciality: "BDS,Dental Surgeon ",
-        description: "Dr. Ulka Vasudev, MDS, Pediatric Dentist, combines advanced clinical expertise with a compassionate and child-friendly approach to dental care. Committed to making every visit a positive experience, she works closely with children and parents to promote excellent oral health and lifelong healthy smiles."
+        name: "Dr. Sumanth Kumar G",
+        speciality: "MDS,Conservative Denstist & Endodontist",
+        description: "Dr. Sumanth Kumar G., BDS, MDS, Conservative Dentist and Endodontist, combines advanced expertise in restorative and endodontic care with a patient-focused approach. Dedicated to preserving natural teeth, he delivers precise, evidence-based treatments that prioritize comfort, function, and long-term oral health outcomes."
     },
     {
         id: 10,
@@ -79,6 +79,27 @@ const team = [
         name: "Dr. Naresh Shetty",
         speciality: "MDS, Prosthodontist and Implantologist",
         description: "Dr. Naresh Shetty, BDS, MDS, Prosthodontist and Implantologist, a graduate of JSS Dental College, Mysore, with an MDS from A.B. Shetty Memorial Institute of Dental Sciences, Mangalore, brings 18+ years of clinical experience. He is dedicated to advanced implantology, prosthodontic excellence, and restoring healthy, confident smiles."
+    },
+    {
+        id: 11,
+        photo: "",
+        name: "Dr. Kiran Shetty",
+        speciality: "MDS,Orthodontist",
+        description: "Dr. Kiran Shetty, BDS, MDS, Orthodontist, brings 25+ years of clinical experience in creating healthy, confident smiles. Combining extensive expertise with a patient-centered approach, he is dedicated to delivering personalized orthodontic care with precision, comfort, and lasting results."
+    },
+    {
+        id: 12,
+        photo: "",
+        name: "Dr. Johnson D’lima",
+        speciality: "MDS,Periodontist and Implantologist",
+        description: "Dr. Johnson D'Lima, BDS, MDS, Periodontist and Implantologist, brings 25+ years of clinical experience in advanced periodontal and implant care. Combining extensive expertise with a patient-focused approach, he is dedicated to restoring oral health, function, and confident smiles through personalized treatment."
+    },
+    {
+        id: 13,
+        photo: "",
+        name: "Dr. Bharath Kumar AM",
+        speciality: "MDS,Periodontist",
+        description: "Dr. Bharath Kumar A.M., BDS, MDS, Periodontist, brings 10+ years of clinical experience in the prevention and treatment of gum diseases. Combining specialized expertise with a patient-centered approach, he is dedicated to promoting long-term oral health and confident smiles through personalized care."
     },
 
 ]
