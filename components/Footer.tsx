@@ -44,24 +44,24 @@ const Footer = () => {
                         <h3 className="font-heading text-[24px] font-medium flex items-center gap-2 text-[#5A7296]">Quick Links <FiLink /></h3>
                         <nav>
                             <ul className="flex flex-col space-y-5 font-body text-[16px] font-normal px-1.5 text-[#B2BECE] ">
-                                <li className="hover:text-white"><Link href={""}>Home</Link></li>
-                                <li className="hover:text-white"><Link href={""}>Our Services</Link></li>
-                                <li className="hover:text-white"><Link href={""}>About Us</Link></li>
-                                <li className="hover:text-white"><Link href={""}>Contact Us</Link></li>
-                                <li className="hover:text-white"><Link href={""}>FAQ</Link></li>
-                                <li className="hover:text-white"><Link href={""}>Testimonials</Link></li>
+                                <li className="hover:text-white"><Link href="/">Home</Link></li>
+                                <li className="hover:text-white"><Link href="/our-services">Our Services</Link></li>
+                                <li className="hover:text-white"><Link href="/about-us">About Us</Link></li>
+                                <li className="hover:text-white"><Link href="/contact-us">Contact Us</Link></li>
+                                <li className="hover:text-white"><Link href="#faq">FAQ</Link></li>
+                                <li className="hover:text-white"><Link href="#testimonials">Testimonials</Link></li>
                             </ul>
                         </nav>
                     </div>
                     <div className="flex flex-col space-y-5">
                         <h3 className="font-heading text-[24px] font-medium flex items-center gap-2 text-[#5A7296]">Treatments <RiDossierFill /></h3>
                         <ul className="flex flex-col space-y-5 font-body text-[16px] font-normal px-1.5 text-[#B2BECE]">
-                            <li className="hover:text-white"><Link href={""}>Teeth Cleaning</Link></li>
-                            <li className="hover:text-white"> <Link href={""}>Root Canal Treatment</Link></li>
-                            <li className="hover:text-white"> <Link href={""}>Dental Implants</Link></li>
-                            <li className="hover:text-white"><Link href={""}>Teeth Whitening</Link></li>
-                            <li className="hover:text-white"><Link href={""}>Braces & Aligners</Link></li>
-                            <li className="hover:text-white"><Link href={""}>Tooth Extraction</Link></li>
+                            <li className="hover:text-white"><Link href="/our-services">Teeth Cleaning</Link></li>
+                            <li className="hover:text-white"> <Link href="/our-services">Root Canal Treatment</Link></li>
+                            <li className="hover:text-white"> <Link href="/our-services">Dental Implants</Link></li>
+                            <li className="hover:text-white"><Link href="/our-services">Teeth Whitening</Link></li>
+                            <li className="hover:text-white"><Link href="/our-services">Braces & Aligners</Link></li>
+                            <li className="hover:text-white"><Link href="/our-services">Tooth Extraction</Link></li>
                         </ul>
                     </div>
                     <div className="flex  flex-col space-y-5">

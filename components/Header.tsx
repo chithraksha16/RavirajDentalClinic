@@ -27,7 +27,7 @@ const Header = () => {
         `transition-colors duration-200 ${
             pathname === href
                 ? "underline underline-offset-4 decoration-[#072959] decoration-2"
-                : ""
+                : "" 
         }`;
 
     return (
