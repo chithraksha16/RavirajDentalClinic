@@ -82,21 +82,21 @@ const team = [
     },
     {
         id: 11,
-        photo: "",
+        photo: "/teams/blank-profile.png",
         name: "Dr. Kiran Shetty",
         speciality: "MDS,Orthodontist",
         description: "Dr. Kiran Shetty, BDS, MDS, Orthodontist, brings 25+ years of clinical experience in creating healthy, confident smiles. Combining extensive expertise with a patient-centered approach, he is dedicated to delivering personalized orthodontic care with precision, comfort, and lasting results."
     },
     {
         id: 12,
-        photo: "",
+        photo: "/teams/blank-profile.png",
         name: "Dr. Johnson D’lima",
         speciality: "MDS,Periodontist and Implantologist",
         description: "Dr. Johnson D'Lima, BDS, MDS, Periodontist and Implantologist, brings 25+ years of clinical experience in advanced periodontal and implant care. Combining extensive expertise with a patient-focused approach, he is dedicated to restoring oral health, function, and confident smiles through personalized treatment."
     },
     {
         id: 13,
-        photo: "",
+        photo: "/teams/blank-profile.png",
         name: "Dr. Bharath Kumar AM",
         speciality: "MDS,Periodontist",
         description: "Dr. Bharath Kumar A.M., BDS, MDS, Periodontist, brings 10+ years of clinical experience in the prevention and treatment of gum diseases. Combining specialized expertise with a patient-centered approach, he is dedicated to promoting long-term oral health and confident smiles through personalized care."
