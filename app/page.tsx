@@ -5,6 +5,7 @@ import HomeGallery from "@/components/HomeGallery"
 import Link from "next/link";
 import StatSection from "@/components/ui/StatSection";
 import { useState } from "react";
+import { motion } from "framer-motion"
 function StatItem({
   icon,
   value,
@@ -142,7 +143,7 @@ export default function Home() {
             className="w-full h-full object-cover object-center"
             priority
             fetchPriority="high"
-            quality={85}
+            quality={75}
             draggable={false}
           />
           {/* Dark gradient overlay */}
@@ -161,7 +162,11 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 min-h-screen lg:min-h-0 lg:py-20 mt-20">
 
             {/* ── LEFT: Text content ── */}
-            <div className="w-full lg:w-1/2 xl:w-[52%] flex flex-col items-center lg:items-start text-center lg:text-left order-1">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="w-full lg:w-1/2 xl:w-[52%] flex flex-col items-center lg:items-start text-center lg:text-left order-1">
 
               {/* Tag line */}
               <p className="text-[#4a8ed4] text-[10px] sm:text-xs tracking-[0.3em] uppercase font-semibold mb-4 sm:mb-5">
@@ -222,14 +227,19 @@ export default function Home() {
                   }
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* ── RIGHT: Before/After Slider ── */}
-            <div className="w-full sm:w-[80%] md:w-[65%] lg:w-1/2 xl:w-[45%] order-2">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="w-full sm:w-[80%] md:w-[65%] lg:w-1/2 xl:w-[45%] order-2">
 
               <BeforeAfterSlider />
 
-            </div>
+            </motion.div>
 
           </div>
         </div>

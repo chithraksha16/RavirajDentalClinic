@@ -44,10 +44,10 @@ const page = () => {
         <div className="flex justify-center py-5">
         <div
         className="flex flex-wrap justify-center gap-4">
-          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#072959] text-white" href="tel:+918971841403"><IoCallOutline /><span>Call Now</span></Link>
-          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#0A8721] text-white" href={''}><IoLogoWhatsapp /><span>WhatsApp</span></Link>
-          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-black text-white" href={''}><IoLogoInstagram /><span>Instagram</span></Link>
-          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#87510A] text-white" href={''}><IoLocationOutline /><span>Get Map</span></Link>
+          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#072959] text-white" href="tel:+918971841403" target="_blank"><IoCallOutline /><span>Call Now</span></Link>
+          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#0A8721] text-white"  href="https://wa.me/918971841403?text=Hello!%20I%20would%20like%20to%20connect%20with%20your%20clinic.%20Thank%20you." target="_blank"><IoLogoWhatsapp /><span>WhatsApp</span></Link>
+          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-black text-white" href='https://www.instagram.com/ravirajdentalclinic05' target="_blank" ><IoLogoInstagram /><span>Instagram</span></Link>
+          <Link className="flex items-center gap-1 font-heading font-normal text-[13px] px-2 py-1 border rounded-xl bg-[#87510A] text-white" href='https://maps.app.goo.gl/haWdregs7oHhCedy9' target="_blank"><IoLocationOutline /><span>Get Map</span></Link>
         </div>
         </div>
 
@@ -167,7 +167,7 @@ const page = () => {
     {/* Button */}
     
       <Button className="bg-[#AC3434] text-white w-full lg:w-auto flex items-center gap-2">
-        <Link href="" className="flex items-center gap-2">
+        <Link href="tel:+918971841403" target="_blank" className="flex items-center gap-2">
       <IoCallOutline size={18} /><span>Call Now</span>
       </Link>
       </Button>
