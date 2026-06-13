@@ -266,7 +266,7 @@ export default function Home() {
             <div className="relative w-full md:w-70 lg:w-75 shrink-0">
               <div className="relative w-full aspect-3/4 rounded-2xl overflow-hidden">
                 <Image
-                  src="/teams/dr Anil shetty 1.webp"
+                  src="/teams/blank-profile.webp"
                   alt="Dr. Anil Shetty"
                   fill
                   className="object-cover object-top"

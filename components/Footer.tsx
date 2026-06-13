@@ -84,7 +84,7 @@ const Footer = () => {
                             <span className="w-[38.5px] h-7 px-2 border rounded-md flex items-center justify-center border-white/40"><FiMail /></span>
                             <div className="flex flex-col gap-1">
                                 <h4 className="font-heading font-medium text-[14px] text-[#072959]">EMAIL</h4>
-                                <p className="sm:w-75 w-auto font-body font-normal text-[12px]">hello@ravirajclinic.com</p>
+                                <p className="sm:w-75 w-auto font-body font-normal text-[12px]">ravirajdentalclinic05@gmail.com</p>
                             </div>
                         </div>
                         <div className="flex gap-3 px-1.5">

@@ -16,39 +16,39 @@ const team = [
         caption: "THE DENTAL CHIEF",
         name: "Dr. Anil Shetty",
         speciality: "BDS,Chief Dental Surgeon & Implantology",
-        description: "Dr. Anil Shetty brings 21+ years of dental expertise and a patient-centered approach to every treatment. His commitment to compassionate care and clinical excellence helps patients achieve healthier smiles with confidence."
+        description: "Dr. Anil Shetty, BDS, Chief Dental Surgeon, a graduate of KVG Dental College, Sullia, Karnataka, with a Fellowship in Implantology from Annoor Dental College, brings over 21 years of clinical experience. Committed to patient-centered care, he strives to restore oral health, function, and confident smiles through compassionate and personalized treatment."
     },
     {
         id: 2,
-        photo: "/teams/Dr Sowjanya.webp",
-        name: "Dr. Sowjanya Devadiga",
+        photo: "/teams/dr soujanya.webp",
+        name: "Dr. Soujanya Devadiga",
         speciality: "BDS,Dental Surgeon ",
-        description: "Dr. Sowjanya Devadiga, BDS, Dental Surgeon, a graduate of KVG Dental College (2009–2014), brings 12 years of clinical experience and a Fellowship in Implant Dentistry. Combining advanced expertise with a compassionate, patient-focused approach, she delivers personalized dental care to help patients achieve healthy, confident smiles."
+        description: "Dr. Soujanya Devadiga, BDS, Dental Surgeon, a graduate of KVG Dental College (2009–2014), brings 12 years of clinical experience and a Fellowship in Implant Dentistry. Combining advanced expertise with a compassionate, patient-focused approach, she delivers personalized dental care to help patients achieve healthy, confident smiles."
     },
     {
         id: 3,
-        photo: "/teams/Dr Shwetha.webp",
+        photo: "/teams/dr shwetha2.webp",
         name: "Dr. Shwetha Shanbhag",
-        speciality: "MDS,Orthodontist & Dentofacial Orthopedics ",
+        speciality: "MDS,Dental Surgeon ",
         description: "Dr. Shwetha Shanbhag, MDS, Orthodontist, a graduate of AECS Maruthi Dental College, Bangalore (2014–2019) and Oxford Dental College (2021–2024), brings 6 years of clinical experience. She combines clinical excellence, precision, and compassion to deliver exceptional patient-centered orthodontic care."
     },
     {
         id: 4,
-        photo: "/teams/Dr Sahana.webp",
+        photo: "/teams/dr sahana2.webp",
         name: "Dr. Sahana Sheikh",
         speciality: "BDS,Dental Surgeon ",
         description: "Dr. Sahana Sheikh, BDS, Dental Surgeon, a graduate of Yenepoya Dental College (2016–2021) with a Fellowship in Implant Dentistry, brings 4 years of clinical experience. She combines clinical expertise with a gentle, caring approach to deliver effective dental care and confident smiles."
     },
     {
         id: 5,
-        photo: "/teams/Dr. Pannaga.webp",
+        photo: "/teams/dr pannaga2.webp",
         name: "Dr. Pannaga B Shetty",
         speciality: "BDS,Dental Surgeon ",
         description: "Dr. Pannaga Shetty, BDS, Dental Surgeon, a graduate of NSVK Sri Venkateshwara Dental College (2019–2024), combines modern dental knowledge with a gentle, patient-centered approach. With 2 years of clinical practice, she is committed to providing quality dental care and helping patients achieve confident smiles."
     },
     {
         id: 6,
-        photo: "/teams/Dr.Donna.webp",
+        photo: "/teams/dr donna2.webp",
         name: "Dr. Donna Bennny Joseph",
         speciality: "BDS,Dental Surgeon ",
         description: "Dr. Donna Benny Joseph, BDS, Dental Surgeon, a graduate of Subbaiah Dental College (2020–2025), combines clinical knowledge with a caring and attentive approach. With 1 year of clinical experience, she is dedicated to patient comfort, quality care, and healthy smiles."
@@ -83,24 +83,24 @@ const team = [
     },
     {
         id: 11,
-        photo: "/teams/blank-profile.png",
+        photo: "/teams/dr kiran.webp",
         name: "Dr. Kiran Shetty",
         speciality: "MDS,Orthodontist",
         description: "Dr. Kiran Shetty, BDS, MDS, Orthodontist, brings 25+ years of clinical experience in creating healthy, confident smiles. Combining extensive expertise with a patient-centered approach, he is dedicated to delivering personalized orthodontic care with precision, comfort, and lasting results."
     },
     {
         id: 12,
-        photo: "/teams/blank-profile.png",
+        photo: "/teams/dr jhonson.webp",
         name: "Dr. Johnson D’lima",
         speciality: "MDS,Periodontist and Implantologist",
-        description: "Dr. Johnson D'Lima, BDS, MDS, Periodontist and Implantologist, brings 25+ years of clinical experience in advanced periodontal and implant care. Combining extensive expertise with a patient-focused approach, he is dedicated to restoring oral health, function, and confident smiles through personalized treatment."
+        description: "Dr. Johnson D'Lima, BDS, MDS, Periodontist and Implantologist, a graduate of Manipal College of Dental Sciences, Manipal, with advanced training and international fellowships in Oral Implantology, brings over 25 years of clinical and academic experience. Dedicated to evidence-based, patient-centered care, he strives to restore oral health, function, and confident smiles through personalized treatment."
     },
     {
         id: 13,
-        photo: "/teams/blank-profile.png",
+        photo: "/teams/dr bharath.webp",
         name: "Dr. Bharath Kumar AM",
         speciality: "MDS,Periodontist",
-        description: "Dr. Bharath Kumar A.M., BDS, MDS, Periodontist, brings 10+ years of clinical experience in the prevention and treatment of gum diseases. Combining specialized expertise with a patient-centered approach, he is dedicated to promoting long-term oral health and confident smiles through personalized care."
+        description: "Dr. Bharath Kumar A.M. is a highly skilled Periodontist and Laser Dental Surgeon with over 10 years of clinical experience in advanced periodontal care and surgical dentistry. he specializes in laser-assisted periodontal procedures, complex periodontal disease management, gum disease treatment, periodontal regeneration, soft tissue grafting, bone grafting, and advanced surgical procedures aimed at preserving and restoring oral health."
     },
 
 ]
@@ -271,7 +271,7 @@ const page = () => {
                     {/* Image with padding like screenshot */}
                     <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-4">
                         <Image
-                            src="/teams/fullteam-rrdc.webp"
+                            src="/teams/rrdc-fullteam.webp"
                             alt="Raviraj dental clinic full team photo"
                             width={1140}
                             height={520}
