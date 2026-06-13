@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "@/components/ui/Button"
 import Marquee from "@/components/ui/Marquee"
 import { FaArrowRight } from "react-icons/fa6"
@@ -115,7 +116,7 @@ const page = () => {
                 <p className="font-heading sm:text-[14px] text-[12px]   text-center text-[#8D9EB7]">Dedicated to providing trusted dental care for a healthy, confident smile.</p>
                 <div className="flex items-center flex-col gap-5 justify-center mt-18">
                     <p className="font-heading sm:text-[14px] text-[12px] sm:w-175 w-auto px-2 sm:px-0 text-center text-[#8D9EB7]">At our clinic, we deliver high-quality dental care with an emphasis on comfort, hygiene, and long-term results. Our experienced team is committed to helping you achieve a healthy, confident smile.</p>
-                    <Button className="bg-[#072959] text text-white flex gap-1" size="sm">Request Consultation <FaArrowRight />  </Button>
+                    <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank" ><Button className="bg-[#072959] text text-white flex gap-1" size="sm">Request Consultation <FaArrowRight />  </Button></Link>
                 </div>
             </div>
             <Marquee />

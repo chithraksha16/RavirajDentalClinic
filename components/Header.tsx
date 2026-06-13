@@ -43,7 +43,7 @@ const Header = () => {
                         width={65}
                         height={65}
                     />
-                    <div className="flex flex-col leading-none">
+                    <Link href="/"><div className="flex flex-col leading-none">
                         <p className="font-heading font-medium text-[20px] md:text-[22px] lg:text-[27px]">
                             RAVIRAJ
                         </p>
@@ -51,6 +51,7 @@ const Header = () => {
                             DENTAL CLINIC
                         </p>
                     </div>
+                    </Link>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -67,7 +68,7 @@ const Header = () => {
                     <Button size="sm">
                         <Link href="tel:+918971841403">+91 8971841403</Link>
                     </Button>
-                    <Link href="">
+                    <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank">
                         <Button size="sm" className="bg-[#072959] text-white">
                             Request Appointment
                         </Button>
@@ -122,7 +123,7 @@ const Header = () => {
                         >
                             +91 8971841403
                         </Link>
-                        <Link href="">
+                        <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank">
                             <Button className="w-full bg-[#072959] text-white">
                                 Request Appointment
                             </Button>

@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="w-full flex flex-col sm:space-y-20 space-y-16">
                 <div className="flex sm:flex-row flex-col justify-between gap-4">
                     <h2 className="font-heading font-medium sm:text-[24px] text-[19px] text-center sm:text-left">Smile Better, Live Better Today</h2>
-                    <Button size="sm" className="bg-[#072959] text-white flex items-center gap-1">Request Appointment <FaArrowRight /></Button>
+                    <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank"> <Button size="sm" className="bg-[#072959] text-white flex items-center gap-1">Request Appointment <FaArrowRight /></Button></Link>
                 </div>
                 <div className="flex justify-center "><hr className="sm:w-[85%] w-[95%] text-[#072959] opacity-50  " /></div>
                 <div className="flex py-4 justify-between  flex-wrap flex-1 sm:px-0 px-2 sm:space-y-0 space-y-16">
@@ -35,7 +35,7 @@ const Footer = () => {
                         <p className="sm:w-87.5 w-62.5 font-body sm:text-[14px] text-[12px] font-normal text-[#B2BECE]">At Raviraj Dental Clinic, we deliver trusted dental care with comfort, precision, and a patient-first approach.</p>
                         <div className="flex gap-3">
                             <Link className="w-[38.5px] h-7 border rounded-md flex items-center justify-center border-white/40" href={"/"}><FaFacebookF /></Link>
-                            <Link className="w-[38.5px] h-7 border rounded-md flex items-center justify-center border-white/40" href={"/"}><FaInstagram /></Link>
+                            <Link className="w-[38.5px] h-7 border rounded-md flex items-center justify-center border-white/40" href='https://www.instagram.com/ravirajdentalclinic05' target="_blank"><FaInstagram /></Link>
                             <Link className="w-[38.5px] h-7 border rounded-md flex items-center justify-center border-white/40" href={"/"}><FaXTwitter /></Link>
                             <Link className="w-[38.5px] h-7 border rounded-md flex items-center justify-center border-white/40" href={"/"}><FiYoutube /></Link>
                         </div>
