@@ -16,7 +16,7 @@ const team = [
         caption: "THE DENTAL CHIEF",
         name: "Dr. Anil Shetty",
         speciality: "BDS,Chief Dental Surgeon & Implantology",
-        description: "Dr. Anil Shetty, BDS, Chief Dental Surgeon, a graduate of KVG Dental College, Sullia, Karnataka, with a Fellowship in Implantology from Annoor Dental College, brings over 21 years of clinical experience. Committed to patient-centered care, he strives to restore oral health, function, and confident smiles through compassionate and personalized treatment."
+        description: "Dr. Anil Shetty, BDS, Chief Dental Surgeon, a graduate of KVG Dental College, Sullia, Karnataka, with a Fellowship in Implantologies from Annoor Dental College, brings over 21 years of clinical experience. Committed to patient-centered care, he strives to restore oral health, function, and confident smiles through compassionate and personalized treatment."
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const team = [
         id: 3,
         photo: "/teams/dr shwetha2.webp",
         name: "Dr. Shwetha Shanbhag",
-        speciality: "MDS,Dental Surgeon ",
+        speciality: "MDS,Orthodontist ",
         description: "Dr. Shwetha Shanbhag, MDS, Orthodontist, a graduate of AECS Maruthi Dental College, Bangalore (2014–2019) and Oxford Dental College (2021–2024), brings 6 years of clinical experience. She combines clinical excellence, precision, and compassion to deliver exceptional patient-centered orthodontic care."
     },
     {
