@@ -131,7 +131,7 @@ export default function Home() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
   return (
     <section>
-      <div className="relative w-full h-auto overflow-hidden bg-[#0d1b2e] flex items-center">
+      <div className="relative w-full h-auto  bg-[#0d1b2e] flex items-center">
 
         {/* Background image with dark overlay */}
         <div className="absolute inset-0">
@@ -159,7 +159,7 @@ export default function Home() {
          *   Mobile  → stacked: text block → slider below
          *   Desktop → side-by-side: text left, slider right
          */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 min-h-screen lg:min-h-0 lg:py-20 mt-20">
+          <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 min-h-auto lg:min-h-0 lg:py-20 mt-20">
 
             {/* ── LEFT: Text content ── */}
             <motion.div
@@ -207,7 +207,7 @@ export default function Home() {
               {/* Stats — shown below buttons on mobile, inline on md+ */}
               <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 w-full">
                 <StatItem
-                  value="8+ yrs"
+                  value="21+ yrs"
                   label="Experience"
                   icon={
                     <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -217,7 +217,7 @@ export default function Home() {
                   }
                 />
                 <StatItem
-                  value="500+"
+                  value="50,000+"
                   label="Happy Patients"
                   icon={
                     <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

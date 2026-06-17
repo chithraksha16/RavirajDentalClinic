@@ -31,23 +31,23 @@ const Header = () => {
         }`;
 
     return (
-        <header className="w-full fixed top-0 left-0 z-50 bg-white text-black h-17.5 shadow-md">
+        <header className="w-full fixed top-0 left-0 z-50 bg-white text-black h-20 shadow-md">
             <nav className="flex items-center justify-between px-4 md:px-6 lg:px-10 py-3">
 
                 {/* Logo */}
                 <div className="flex items-center">
                     <Image
-                        className="w-12 md:w-14 h-auto"
+                        className="w-15 md:w-17 h-auto"
                         src="/rrdc-logo.webp"
                         alt="Raviraj dental clinic logo"
                         width={65}
                         height={65}
                     />
                     <Link href="/"><div className="flex flex-col leading-none">
-                        <p className="font-heading font-medium text-[20px] md:text-[22px] lg:text-[27px]">
+                        <p className="font-heading font-medium text-[25px] md:text-[25px] lg:text-[30px]">
                             RAVIRAJ
                         </p>
-                        <p className="font-heading font-medium text-[10px] md:text-[11px] lg:text-[12px] text-[#072959] flex justify-center">
+                        <p className="font-heading font-medium text-[13px] md:text-[14px] lg:text-[15px] text-[#072959] flex justify-center">
                             DENTAL CLINIC
                         </p>
                     </div>
@@ -78,7 +78,7 @@ const Header = () => {
                 {/* Mobile + Tablet Menu */}
                 <div className="flex lg:hidden">
                     <button onClick={handleMenu}>
-                        <FiMenu size={28} />
+                        <FiMenu size={30} />
                     </button>
                 </div>
             </nav>
