@@ -191,7 +191,7 @@ export default function Home() {
 
               {/* CTA buttons */}
               <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 w-full">
-              <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank"> <button aria-label="Request Consultation" className="flex items-center gap-2 bg-[#082D62] hover:bg-[#1e6ad4] text-white text-xs sm:text-sm font-semibold tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 shadow-lg shadow-blue-900/40">
+                <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank"> <button aria-label="Request Consultation" className="flex items-center gap-2 bg-[#082D62] hover:bg-[#1e6ad4] text-white text-xs sm:text-sm font-semibold tracking-wide px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 shadow-lg shadow-blue-900/40">
                   Request Consultation
                   <svg viewBox="0 0 20 20" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 10h12M12 5l5 5-5 5" />
@@ -306,7 +306,7 @@ export default function Home() {
               <p className="text-[#444] text-sm sm:text-base leading-relaxed">
                 A dedicated dental professional with 21+ years of clinical experience,
                 holding qualifications from KVG Dental College, Sullia, Karnataka, along
-                with a Fellowship in Implantology.
+                with a Fellowship in Implantology From  Manipal University Malaysia.
               </p>
               <p className="text-[#444] text-sm sm:text-base leading-relaxed">
                 Known for a calm approach and patient-first philosophy, he believes
@@ -520,7 +520,7 @@ export default function Home() {
             <div className="w-full lg:w-[42%] xl:w-[38%] flex flex-col gap-3 sm:gap-4 shrink-0">
               <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
                 <Image
-                  src="/treatments/treating1.webp"
+                  src="/treatments/treatment11.webp"
                   alt="Dental team treating patient"
                   fill
                   loading="lazy"
@@ -530,7 +530,7 @@ export default function Home() {
               </div>
               <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
                 <Image
-                  src="/treatments/treating2.webp"
+                  src="/treatments/treatment22.webp"
                   alt="Dentist at work"
                   fill
                   loading="lazy"

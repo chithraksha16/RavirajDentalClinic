@@ -40,6 +40,7 @@ const Header = () => {
                         className="w-15 md:w-17 h-auto"
                         src="/rrdc-logo.webp"
                         alt="Raviraj dental clinic logo"
+                        loading="eager"
                         width={65}
                         height={65}
                     />

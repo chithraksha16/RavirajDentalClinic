@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer className="w-full bg-[#141414]  text-white sm:p-10 p-8 z-40 ">
             <div className="w-full flex flex-col sm:space-y-20 space-y-16">
-                <div className="flex sm:flex-row flex-col justify-between gap-4">
+                <div className="flex sm:flex-row flex-col sm:justify-between justify-center items-center gap-4">
                     <h2 className="font-heading font-medium sm:text-[24px] text-[19px] text-center sm:text-left">Smile Better, Live Better Today</h2>
                     <Link href="https://www.dentee.com/clinic/udupi/raviraj-dental-clinic/3e115265-aaea-4469-a93a-8f3d0160f242" target="_blank"> <Button size="sm" className="bg-[#072959] text-white flex items-center gap-1">Request Appointment <FaArrowRight /></Button></Link>
                 </div>
