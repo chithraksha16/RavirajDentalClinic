@@ -629,16 +629,16 @@ export default function Home() {
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
             {[
               {
-                review: "I had a great experience at Raviraj Dental Clinic. The doctor was very professional and made me feel comfortable throughout the treatment.",
-                name: "Raju Verma",
+                review: "My experience with the staff and doctors of Raviraj Dental Clinic was excellent. The satff is very supportive and guiding. I really appreciate, there good uderstanding & caring ability..Thank you so much❤️",
+                name: "Ms. Swathi Byndoor",
               },
               {
-                review: "Excellent service and very hygienic clinic. The staff is friendly, and my treatment was completely painless. Highly recommended!",
-                name: "Priya Patel",
+                review: "One of the best dentist i have experienced. Such a polite doctors with outstanding machineries.",
+                name: "Ms. Fathima Nazart",
               },
               {
-                review: "Very satisfied with the results. The dentist explained everything clearly and provided the best care. Truly a trustworthy clinic.",
-                name: "Amith Sharma",
+                review: "Great service from the entire team. They were quick, friendly, and made me feel very comfortable.",
+                name: "Mr. Raghavendra",
               },
             ].map(({ review, name }) => (
               <div
