@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button"
 import Link from "next/link";
 import Marquee from "@/components/ui/Marquee"
 import { FaArrowRight, FaRegEyeSlash, FaRegUser } from "react-icons/fa6";
-import { RiUserSmileLine, RiStarSmileLine, RiDiamondLine, RiAlignLeft, RiBracesFill, RiForbid2Line, RiPuzzle2Line, RiFlashlightLine, RiGitRepositoryPrivateLine } from "react-icons/ri";
+import { RiUserSmileLine, RiStarSmileLine, RiDiamondLine, RiAlignLeft, RiBracesFill, RiForbid2Line, RiPuzzle2Line, RiFlashlightLine, RiGitRepositoryPrivateLine,RiDropperFill } from "react-icons/ri";
 import { TbDental } from "react-icons/tb";
 import { LuLayers, LuCrown, LuAnchor, LuFlaskConical } from "react-icons/lu";
 import { IoLink } from "react-icons/io5";
@@ -257,6 +257,13 @@ const page = () => {
                         "Fluoride treatment strengthens tooth enamel and helps protect children’s teeth from cavities and decay.",
                     subIcon: <LuFlaskConical size={20} />,
                 },
+                {
+                    subTitle: "Conscious Sedation",
+                    subContent:
+                        "Safe and relaxing sedation techniques to help anxious patients stay calm and comfortable during treatment.",
+                    subIcon: <RiDropperFill size={20} />,
+                },
+                
             ],
         },
     ]
