@@ -136,14 +136,14 @@ export default function Home() {
         {/* Background image with dark overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/about1.webp"
+            src="/rrdc-hero-image.webp"
             alt="Raviraj dental clinic hero image"
             width={1920}
             height={1080}
             className="w-full h-full object-cover object-center"
             priority
             fetchPriority="high"
-            quality={75}
+            quality={60}
             draggable={false}
           />
           {/* Dark gradient overlay */}
@@ -270,8 +270,8 @@ export default function Home() {
                   alt="Dr. Anil Shetty"
                   fill
                   className="object-cover object-top"
+                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, 300px"
-                  priority
                 />
               </div>
 
@@ -284,7 +284,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <p className="text-white text-sm font-bold leading-none">BDS</p>
-                  <p className="text-white/70 text-[11px] mt-0.5">Implantology</p>
+                  <p className="text-white/70 text-[11px] mt-0.5">Implantologist</p>
                 </div>
               </div>
             </div>
@@ -355,34 +355,34 @@ export default function Home() {
         </div>
 
         <div className="bg-white border border-gray-100 rounded-2xl px-2 sm:px-4 py-2 my-6 w-full">
-          <div className="grid grid-cols-2 md:grid-cols-4">
-            {[
-              { icon: "🛡️", label: "ISO Certified", sub: "Official standards" },
-              { icon: "🫀", label: "Pain Free Treatment", sub: "Modern Anaesthesia" },
-              { icon: "🖥️", label: "Advanced Equipment", sub: "Digital x-ray & 3D scan" },
-              { icon: "👤", label: "8+ Years Experience", sub: "Trusted Specialists" },
-            ].map(({ icon, label, sub }, i) => (
-              <div
-                key={label}
-                className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-3 sm:py-4
-          ${i % 2 === 0 ? "border-r border-gray-100" : ""}
-          ${i < 2 ? "border-b border-gray-100 md:border-b-0" : ""}
-          ${i < 3 ? "md:border-r md:border-gray-100" : ""}
-        `}
-              >
-                <span className="text-lg sm:text-xl text-gray-400 shrink-0">{icon}</span>
-                <div className="min-w-0">
-                  <p className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight wrap-break-word">
-                    {label}
-                  </p>
-                  <p className="text-[10px] sm:text-xs text-gray-400 mt-0.5 wrap-break-word">
-                    {sub}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div className="grid grid-cols-1 sm:grid-cols-3">
+    {[
+      { icon: "🫀", label: "Pain Free Treatment", sub: "Modern Anaesthesia" },
+      { icon: "🖥️", label: "Advanced Equipment", sub: "Digital x-ray & 3D scan" },
+      { icon: "👤", label: "21+ Years Experience", sub: "Trusted Specialists" },
+    ].map(({ icon, label, sub }, i) => (
+      <div
+        key={label}
+        className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-3 sm:py-4 ${
+          i < 2 ? "sm:border-r sm:border-gray-100" : ""
+        }`}
+      >
+        <span className="text-lg sm:text-xl text-gray-400 shrink-0">
+          {icon}
+        </span>
+
+        <div className="min-w-0">
+          <p className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight wrap-break-word">
+            {label}
+          </p>
+          <p className="text-[10px] sm:text-xs text-gray-400 mt-0.5 wrap-break-word">
+            {sub}
+          </p>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 justify-items-center ">
           {treatment.map((treatments) => (

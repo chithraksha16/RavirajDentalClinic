@@ -17,8 +17,8 @@ const teamGroups = [
                 id: 1,
                 photo: "/teams/Dr Anil Shetty.webp",
                 name: "Dr. Anil Shetty",
-                speciality: "BDS, Chief Dental Surgeon & Implantology",
-                description: "Dr. Anil Shetty, BDS, Chief Dental Surgeon, a graduate of KVG Dental College, Sullia, Karnataka, with a Fellowship in Implantology from Annoor Dental College, brings over 21 years of clinical experience. Committed to patient-centered care, he strives to restore oral health, function, and confident smiles through compassionate and personalized treatment."
+                speciality: "Chief Dental Surgeon & Implantologist",
+                description: "Dr. Anil Shetty, BDS, Chief Dental Surgeon, a graduate of KVG Dental College, Sullia, Karnataka, with a Fellowship in Implantology from  Manipal University Malaysia, brings over 21 years of clinical experience. Committed to patient-centered care, he strives to restore oral health, function, and confident smiles through compassionate and personalized treatment."
             },
         ]
     },
@@ -30,7 +30,7 @@ const teamGroups = [
                 photo: "/teams/dr soujanya.webp",
                 name: "Dr. Soujanya Devadiga",
                 speciality: "BDS, Dental Surgeon",
-                description: "Dr. Soujanya Devadiga, BDS, Dental Surgeon, a graduate of KVG Dental College (2009–2014), brings 12 years of clinical experience and a Fellowship in Implant Dentistry. Combining advanced expertise with a compassionate, patient-focused approach, she delivers personalized dental care to help patients achieve healthy, confident smiles."
+                description: "Dr. Soujanya Devadiga, BDS, Dental Surgeon, a graduate of KVG Dental College (2009–2014), brings 11 years of clinical experience and a Fellowship in Implant Dentistry. Combining advanced expertise with a compassionate, patient-focused approach, she delivers personalized dental care to help patients achieve healthy, confident smiles."
             },
             {
                 id: 3,
@@ -67,52 +67,52 @@ const teamGroups = [
         members: [
             {
                 id: 7,
-                photo: "/teams/Dr tejkiran.webp",
-                name: "Dr. Tejkiran Shetty",
-                speciality: "MDS, Oral and Maxillofacial Surgeon",
-                description: "Dr. Tejkiran Shetty, MDS, Oral and Maxillofacial Surgeon, specializes in providing expert surgical care with a focus on clinical excellence and patient comfort. His commitment to advanced treatment techniques and individualized care ensures optimal outcomes for a wide range of oral and maxillofacial procedures."
-            },
-            {
-                id: 8,
-                photo: "/teams/Dr Ulka (2).webp",
-                name: "Dr. Ulka Vasudev",
-                speciality: "MDS, Pediatric Dentist",
-                description: "Dr. Ulka Vasudev, MDS, Pediatric Dentist, combines advanced clinical expertise with a compassionate and child-friendly approach to dental care. Committed to making every visit a positive experience, she works closely with children and parents to promote excellent oral health and lifelong healthy smiles."
-            },
-            {
-                id: 9,
-                photo: "/teams/Dr sumanth.webp",
-                name: "Dr. Sumanth Kumar G",
-                speciality: "MDS, Conservative Dentist & Endodontist",
-                description: "Dr. Sumanth Kumar G., BDS, MDS, Conservative Dentist and Endodontist, combines advanced expertise in restorative and endodontic care with a patient-focused approach. Dedicated to preserving natural teeth, he delivers precise, evidence-based treatments that prioritize comfort, function, and long-term oral health outcomes."
-            },
-            {
-                id: 10,
-                photo: "/teams/Dr. Naresh.webp",
-                name: "Dr. Naresh Shetty",
-                speciality: "MDS, Prosthodontist and Implantologist",
-                description: "Dr. Naresh Shetty, BDS, MDS, Prosthodontist and Implantologist, a graduate of JSS Dental College, Mysore, with an MDS from A.B. Shetty Memorial Institute of Dental Sciences, Mangalore, brings 18+ years of clinical experience. He is dedicated to advanced implantology, prosthodontic excellence, and restoring healthy, confident smiles."
-            },
-            {
-                id: 11,
                 photo: "/teams/dr kiran.webp",
                 name: "Dr. Kiran Shetty",
                 speciality: "MDS, Orthodontist",
                 description: "Dr. Kiran Shetty, BDS, MDS, Orthodontist, brings 25+ years of clinical experience in creating healthy, confident smiles. Combining extensive expertise with a patient-centered approach, he is dedicated to delivering personalized orthodontic care with precision, comfort, and lasting results."
             },
             {
-                id: 12,
+                id: 8,
                 photo: "/teams/dr jhonson.webp",
                 name: "Dr. Johnson D'lima",
                 speciality: "MDS, Periodontist and Implantologist",
                 description: "Dr. Johnson D'Lima, BDS, MDS, Periodontist and Implantologist, a graduate of Manipal College of Dental Sciences, Manipal, with advanced training and international fellowships in Oral Implantology, brings over 25 years of clinical and academic experience. Dedicated to evidence-based, patient-centered care, he strives to restore oral health, function, and confident smiles through personalized treatment."
             },
             {
-                id: 13,
+                id: 9,
+                photo: "/teams/Dr. Naresh.webp",
+                name: "Dr. Naresh Shetty",
+                speciality: "MDS, Prosthodontist and Implantologist",
+                description: "Dr. Naresh Shetty, BDS, MDS, Prosthodontist and Implantologist, a graduate of JSS Dental College, Mysore, with an MDS from A.B. Shetty Memorial Institute of Dental Sciences, Mangalore, brings 18+ years of clinical experience. He is dedicated to advanced implantology, prosthodontic excellence, and restoring healthy, confident smiles."
+            },
+            {
+                id: 10,
                 photo: "/teams/dr bharath.webp",
                 name: "Dr. Bharath Kumar AM",
                 speciality: "MDS, Periodontist & Laser Dental Surgeon",
-                description: "Dr. Bharath Kumar A.M. is a highly skilled Periodontist and Laser Dental Surgeon with over 10 years of clinical experience in advanced periodontal care and surgical dentistry. He specializes in laser-assisted periodontal procedures, complex periodontal disease management, gum disease treatment, periodontal regeneration, soft tissue grafting, bone grafting, and advanced surgical procedures aimed at preserving and restoring oral health."
+                description: "Dr. Bharath Kumar A.M. is a highly skilled Periodontist and Laser Dental Surgeon with over 10 years of clinical experience in advanced periodontal care and surgical dentistry. he specializes in laser-assisted periodontal procedures, complex periodontal disease management, gum disease treatment, periodontal regeneration, soft tissue grafting, bone grafting, and advanced surgical procedures aimed at preserving and restoring oral health."
+            },
+            {
+                id: 11,
+                photo: "/teams/Dr tejkiran.webp",
+                name: "Dr. Tejkiran Shetty",
+                speciality: "MDS, Oral and Maxillofacial Surgeon",
+                description: "Dr. Tejkiran Shetty, MDS, Oral and Maxillofacial Surgeon, specializes in providing expert surgical care with a focus on clinical excellence and patient comfort. His commitment to advanced treatment techniques and individualized care ensures optimal outcomes for a wide range of oral and maxillofacial procedures."
+            },
+            {
+                id: 12,
+                photo: "/teams/Dr Ulka (2).webp",
+                name: "Dr. Ulka Vasudeva",
+                speciality: "MDS, Pediatric Dentist",
+                description: "Dr. Ulka Vasudeva, MDS, Pediatric Dentist, combines advanced clinical expertise with a compassionate and child-friendly approach to dental care. Committed to making every visit a positive experience, she works closely with children and parents to promote excellent oral health and lifelong healthy smiles."
+            },
+            {
+                id: 13,
+                photo: "/teams/Dr sumanth.webp",
+                name: "Dr. Sumanth Kumar G",
+                speciality: "MDS, Conservative Dentist & Endodontist",
+                description: "Dr. Sumanth Kumar G., BDS, MDS, Conservative Dentist and Endodontist, combines advanced expertise in restorative and endodontic care with a patient-focused approach. Dedicated to preserving natural teeth, he delivers precise, evidence-based treatments that prioritize comfort, function, and long-term oral health outcomes."
             },
         ]
     }
@@ -212,7 +212,7 @@ const page = () => {
 
                 <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between gap-10">
                     <Image
-                        src="/about1.webp"
+                        src="/treatments/dr anil shetty treat.webp"
                         alt="Dr.Anil shetty treating patient"
                         width={600}
                         height={500}
@@ -289,7 +289,7 @@ const page = () => {
                             </div>
                         ) : (
                             /* Multi-member grid */
-                            <div className="flex flex-wrap justify-center gap-5 max-w-[904px] mx-auto">
+                            <div className="flex flex-wrap justify-center gap-5 max-w-226 mx-auto">
                                 {group.members.map((member) => (
                                     <div
                                         key={member.id}

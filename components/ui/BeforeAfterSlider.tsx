@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useCallback } from "react";
-
+import Image from "next/image";
 export default function BeforeAfterSlider() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [sliderPos, setSliderPos] = useState(50);
@@ -57,10 +57,13 @@ export default function BeforeAfterSlider() {
       >
         {/* Before Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/treatments/damagd-before.webp"
             alt="Before treatment"
             className="w-full h-full object-cover object-center"
+            sizes="(max-width: 640px) 100vw,
+         (max-width: 1024px) 80vw,
+         531px"
             draggable={false}
           />
 
@@ -76,10 +79,13 @@ export default function BeforeAfterSlider() {
             clipPath: `inset(0 ${100 - sliderPos}% 0 0)`,
           }}
         >
-          <img
+          <Image
             src="/treatments/bright-after.webp"
             alt="After treatment"
             className="w-full h-full object-cover object-center"
+            sizes="(max-width: 640px) 100vw,
+         (max-width: 1024px) 80vw,
+         531px"
             draggable={false}
           />
 

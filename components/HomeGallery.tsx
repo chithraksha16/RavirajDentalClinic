@@ -10,7 +10,7 @@ type GalleryItem =
 
 // ─── Data — replace src/poster with your real assets ────────────────────────
 const ITEMS: GalleryItem[] = [
-    { type: "video", src: "/gallery/rrdcvid1_hJdcREnf.mp4", poster: "/clinic-video-poster.jpg" },
+    { type: "video", src: "/gallery/Rrdcvid1.mp4", poster: "/clinic-video-poster.jpg" },
     { type: "image", src: "/gallery/gallery1.webp", alt: "Clinic room 1" },
     { type: "image", src: "/gallery/gallery2.webp", alt: "Clinic room 2" },
     { type: "image", src: "/gallery/gallery3.webp", alt: "Clinic interior" },

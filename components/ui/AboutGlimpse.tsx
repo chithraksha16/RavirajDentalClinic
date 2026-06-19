@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 
 const mediaItems = [
-  { type: "video", src: "/gallery/rrdcvid2_Jr7H9iTR.mp4" },
+  { type: "video", src: "/gallery/Rrdcvid2.mp4" },
   { type: "image", src: "/gallery/gallery7.webp" },
   { type: "image", src: "/gallery/gallery5.webp" },
   { type: "image", src: "/gallery/gallery3.webp" },
