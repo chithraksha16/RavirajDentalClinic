@@ -35,6 +35,7 @@ const Header = () => {
             <nav className="flex items-center justify-between px-4 md:px-6 lg:px-10 py-3">
 
                 {/* Logo */}
+                <Link href="/">
                 <div className="flex items-center">
                     <Image
                         className="w-15 md:w-17 h-auto"
@@ -54,6 +55,7 @@ const Header = () => {
                     </div>
                     </Link>
                 </div>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex items-center gap-6 font-heading font-medium text-[15px]">
