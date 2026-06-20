@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-import {Montserrat,Inter} from "next/font/google"
 import Footer from "@/components/Footer";
+import { Montserrat, Inter } from "next/font/google";
 
-const montserrat=Montserrat({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100","200","300","400", "500", "600", "700","800","900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-montserrat",
-})
+});
 
-const inter=Inter({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["100","200","300","400", "500", "600", "700","800","900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-inter",
-})
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ravirajdentalclinic.com"),
+
   title: {
     default: "Best Dental Clinic in Byndoor, Udupi | Raviraj Dental Clinic",
     template: "%s | Raviraj Dental Clinic",
@@ -46,9 +48,18 @@ export const metadata: Metadata = {
     title: "Best Dental Clinic in Byndoor, Udupi | Raviraj Dental Clinic",
     description:
       "Advanced dental care in Byndoor, Udupi with personalized treatment and modern technology.",
-    type: "website",
-    locale: "en_IN",
+    url: "https://ravirajdentalclinic.com",
     siteName: "Raviraj Dental Clinic",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raviraj Dental Clinic",
+      },
+    ],
   },
 
   twitter: {
@@ -56,6 +67,7 @@ export const metadata: Metadata = {
     title: "Best Dental Clinic in Byndoor, Udupi | Raviraj Dental Clinic",
     description:
       "Comprehensive dental care with experienced dentists and modern treatment facilities.",
+    images: ["/og-image.jpg"],
   },
 
   alternates: {
@@ -73,12 +85,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const dentistSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    name: "Raviraj Dental Clinic",
+    url: "https://ravirajdentalclinic.com",
+    image: "https://ravirajdentalclinic.com/og-image.jpg",
+    priceRange: "₹₹",
+    medicalSpecialty: "Dentistry",
+    areaServed: "Byndoor, Udupi",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Byndoor",
+      addressRegion: "Karnataka",
+      addressCountry: "IN",
+    },
+  };
+
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${montserrat.className} ${inter.variable} ${inter.className}`}>
-        <Header/>
+      <body
+        className={`${montserrat.variable} ${montserrat.className} ${inter.variable} ${inter.className}`}
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(dentistSchema),
+          }}
+        />
+
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

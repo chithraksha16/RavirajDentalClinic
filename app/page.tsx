@@ -274,19 +274,6 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 300px"
                 />
               </div>
-
-              {/* Badge overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-[#1a2f5e]/90 backdrop-blur-sm rounded-b-2xl px-4 py-3 flex items-center gap-2">
-                {/* Degree icon */}
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white shrink-0" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                  <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
-                </svg>
-                <div>
-                  <p className="text-white text-sm font-bold leading-none">BDS</p>
-                  <p className="text-white/70 text-[11px] mt-0.5">Implantologist</p>
-                </div>
-              </div>
             </div>
 
             {/* ── Content ── */}
